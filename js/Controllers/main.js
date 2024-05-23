@@ -44,6 +44,7 @@ form.addEventListener("submit", async event =>{
 
     try{
         await connectionAPI.createNewCard(name, price, image);
+        window.location.reload();
     }catch(error){
         console.log(error);
     }

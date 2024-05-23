@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Reference for style sheet CSS -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Project font Sixtyfour -->
+        <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+        <title> AluraGeek</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <img src="img/icons8-corazones-22.png" class="header_img" alt="Heart"><img src="img/icons8-corazones-22.png" class="header_img" alt="Heart"><img src="img/icons8-corazones-22.png" class="header_img" alt="Heart"><!--/<a target="_blank" href="https://icons8.com/icon/pWxEvv81GRVE/corazones">Corazones</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>-->
+            <h1 class="header_title">AluraGeek</h1>
+        </header>
+
+        <main class="principal_products">
+            <fieldset class="form">
+                <legend class="form_title"> ADD PRODUCT:</legend>
+                <form data-form class="form_start">
+                    <input data-name class="form_input" id= "productName" type="text" name="nombre" placeholder="Name..." required>
+                    <input data-price class="form_input" id= "productPrice" type="number" name="precio" placeholder="Price..." required>
+                    <input data-image class="form_input" id="productImage" type="text" name="imagen" placeholder="Image..." required>
+                    <div class="form_button">
+                        <button type="submit" class="form_button_submit">Send</button>
+                        <button type="reset" class="form_button_clear">Clear</button>
+                    </div>
+                    
+                </form>  
+            </fieldset>
+            
+            <section class="products">
+                
+                <h2 class="product_title"> MY PRODUCTS:</h2>
+
+                <div data-products class="products_division">
+                    
+
+                </div>
+                
+            </section>
+    
+        </main>
+        
+        <footer class="footer">
+                <div class="footer_title">
+                    <img src="img/icons8-corazones-22.png" class="header_img" alt="Heart"><img src="img/icons8-corazones-22.png" class="header_img" alt="Heart"><img src="img/icons8-corazones-22.png" class="header_img" alt="Heart"><!--/<a target="_blank" href="https://icons8.com/icon/pWxEvv81GRVE/corazones">Corazones</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>-->
+                    <h3 class="header_title">AluraGeek</h3>
+                </div>
+                
+                <p>Developed by María Florencia Roldan Paz</p>
+                <p>Alura Latam - 2024</p>
+        </footer>
+        <script type="module" src="./js/Controllers/main.js"></script>
+    </body>
+</html>

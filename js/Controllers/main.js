@@ -31,9 +31,12 @@ function createCard(name, price, image, id){
 
 async function products() {
     const productsList = await connectionAPI.cardList();
-    productsList.forEach(product => {
-        productsDivision.appendChild(createCard(product.name, product.price, product.image, product.id));
-    });
+    if (productsList.length > 0) {
+        productsList.forEach(product => {
+            productsDivision.appendChild(createCard(product.name, product.price, product.image, product.id));
+        }); 
+    }
+    
 }
 
 form.addEventListener("submit", async event =>{

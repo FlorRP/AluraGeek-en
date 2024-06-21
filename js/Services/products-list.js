@@ -1,7 +1,23 @@
 async function cardList(){
-    const connection = await fetch("https://664e700dfafad45dfae00f3d.mockapi.io/products");
-    const convert = connection.json();
-    return convert;
+    const errorParagraph = document.querySelector("[data-error]");
+    try {
+        const connection = await fetch("https://664e700dfafad45dfae00f3d.mockapi.io/products");
+        const convert = connection.json();
+
+        if (convert.length === 0) {
+            //Shows the error paragraph if the respobse is empty
+            errorParagraph.style.display = 'block';
+        } else {
+            //hides the paragraph if there is content
+            errorParagraph.style.display = 'none';
+        }
+
+        return convert;
+    } catch (error) {
+        console.error('There has been an error:', error);
+    }
+    
+    
 }
 
 async function createNewCard(name, price, image){

@@ -5,7 +5,8 @@ This web page consumes API from a fake API website:
 
 https://mockapi.io/
 
-# CRUD that can be used
+# HTTP methods that can be use in the app
 
-- Create: The form on this website can add new productos to the list, which will also be added in the database (fake API) created.
+- Get: Since we make a petition to the database (fake API) to be able to see the products in our web page.
+- Post: The form on this website can add new productos to the list, which will also be added in the database (fake API) created.
 - Delete: Each product has a button to erase it from the database (fake API) created.
